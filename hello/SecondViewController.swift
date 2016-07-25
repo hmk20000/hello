@@ -13,4 +13,9 @@ class SecondViewController: UIViewController {
     @IBAction func dismiss(sender: AnyObject) {
         
     }
+    @IBAction func moveBynavi(sender: AnyObject) {
+        if let uvc = self.storyboard?.instantiateViewControllerWithIdentifier("ThirdVC"){
+            self.navigationController?.pushViewController(uvc, animated: true)
+        }
+    }
 }
